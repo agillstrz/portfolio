@@ -1,12 +1,9 @@
 "use client";
-import React, { useState } from "react";
 import TextAnimation from "@/animation/TextAnimation";
-import { TfiLayoutColumn2Alt, TfiLayoutColumn3Alt } from "react-icons/tfi";
-import { RiArrowGoBackFill } from "react-icons/ri";
-import { motion } from "framer-motion";
-import { project } from "@/mockup/mockup";
-import CardProject from "@/components/card/CardProject";
 import ButtonCol from "@/components/button/ButtonCol";
+import CardProject from "@/components/card/CardProject";
+import { project } from "@/mockup/mockup";
+import { useState } from "react";
 export default function Project() {
   const [col, setCol] = useState(1);
   const parrent = {
