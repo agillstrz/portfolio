@@ -15,7 +15,9 @@ export default function ImageAbout() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <Image src={foto} />
+            <Image
+              src={`https://ik.imagekit.io/oxmhan7av/1675951596659__2_.jpg?updatedAt=1680456838555`}
+            />
           </motion.div>
         </div>
       </div>
