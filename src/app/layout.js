@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Providers>
           <Navbar />
-          <div className="dark:bg-dark1  bg-light2 font-poppins text-dark1  transition-all duration-700 dark:text-text1">
+          <div className="dark:bg-dark1  overflow-hidden bg-light2 font-poppins text-dark1  transition-all duration-700 dark:text-text1">
             {children}
           </div>
           <Footer />
