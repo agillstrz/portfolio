@@ -19,13 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {/* <Providers> */}
-        <Navbar />
-        <div className="dark:bg-dark1  bg-light2 font-poppins text-dark1  transition-all duration-700 dark:text-text1">
-          {children}
-        </div>
-        <Footer />
-        {/* </Providers> */}
+        <Providers>
+          <Navbar />
+          <div className="dark:bg-dark1  bg-light2 font-poppins text-dark1  transition-all duration-700 dark:text-text1">
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
