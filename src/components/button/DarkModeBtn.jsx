@@ -9,6 +9,7 @@ export default function DarkModeBtn() {
 
   useEffect(() => {
     setMounted(true);
+    setTheme("light");
   }, []);
 
   if (!mounted) {
