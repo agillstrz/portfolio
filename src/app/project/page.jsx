@@ -33,29 +33,26 @@ export default function Project() {
   };
   return (
     <>
-      {/* <TransitionAnimation /> */}
-      <div className=" section   ">
-        <div className=" overflow-hidden  ">
-          <div className="relative  mb-5 lg:mb-10 ">
-            {" "}
-            <TextAnimation text="Projects" />
-            <ButtonCol col={col} setCol={setCol} />
-          </div>
-          <div
-            className={`flex justify-center gap-y-4  lg:gap-4 flex-row flex-wrap w-full ${
-              col === 1
-                ? "flex-col "
-                : col === 2
-                ? "lg:gap-x-5 lg:px-20 gap-x-1"
-                : "gap-x-5 "
-            } `}
-          >
-            {project.map((m, index) => (
-              <div key={index}>
-                <CardProject data={m} index={index} col={col} />
-              </div>
-            ))}
-          </div>
+      <div className=" overflow-hidden  ">
+        <div className="relative  mb-5 lg:mb-10 ">
+          {" "}
+          <TextAnimation text="Projects" />
+          <ButtonCol col={col} setCol={setCol} />
+        </div>
+        <div
+          className={`flex justify-center gap-y-4  lg:gap-4 flex-row flex-wrap w-full ${
+            col === 1
+              ? "flex-col "
+              : col === 2
+              ? "lg:gap-x-5 lg:px-20 gap-x-1"
+              : "gap-x-5 "
+          } `}
+        >
+          {project.map((m, index) => (
+            <div key={index}>
+              <CardProject data={m} index={index} col={col} />
+            </div>
+          ))}
         </div>
       </div>
     </>
