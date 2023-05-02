@@ -14,7 +14,7 @@ export default function DarkModeBtn() {
   if (!mounted) {
     return null;
   }
-  const currentTheme = theme == "system" ? "light" : theme;
+  const currentTheme = theme == "system" ? "dark" : theme;
   return (
     <>
       <div className="iconNavbar text-white bg-dark1 dark:text-dark1 dark:bg-light2 lg:flex">
@@ -25,7 +25,9 @@ export default function DarkModeBtn() {
               animate={{ scale: [0, 1], rotate: [90, 0] }}
               transition={{ duration: 0.4 }}
             >
-              <MdDarkMode className={`lg:text-[30px] text-[25px]`} />
+              <MdDarkMode
+                className={`lg:text-[30px] text-[25px] w-full h-full`}
+              />
             </motion.div>
           </button>
         ) : (
@@ -35,7 +37,9 @@ export default function DarkModeBtn() {
               animate={{ scale: [0, 0, 1], rotate: [0, 90, 0] }}
               transition={{ duration: 0.4 }}
             >
-              <MdLightMode className={`lg:text-[30px]  text-[25px] `} />
+              <MdLightMode
+                className={`lg:text-[30px]  text-[25px]  w-full h-full `}
+              />
             </motion.div>
           </button>
         )}

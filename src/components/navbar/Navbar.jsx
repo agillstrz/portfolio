@@ -5,7 +5,9 @@ import { useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import DarkModeBtn from "../button/DarkModeBtn";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 export default function Navbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -19,7 +21,9 @@ export default function Navbar() {
             >
               {m.name}
               <div
-                className={` absolute h-[2px] w-0 transition-all duration-500 dark:group-hover:bg-text2 ease-in-out group-hover:w-full dark:bg-light2 bg-dark2`}
+                className={` ${
+                  pathname == m.path && "w-full"
+                } absolute h-[2px] w-0 transition-all duration-500 dark:group-hover:bg-text2 ease-in-out group-hover:w-full dark:bg-light2 bg-dark2`}
               ></div>
             </Link>
           ))}
@@ -82,7 +86,9 @@ export default function Navbar() {
                 >
                   {m.name}
                   <div
-                    className={` absolute h-[2px] w-0 transition-all duration-200 ease-in-out dark:bg-dark2 bg-light2`}
+                    className={`${
+                      pathname == m.path && "w-full font-bold"
+                    } absolute h-[2px] w-0 transition-all duration-200 ease-in-out dark:bg-dark2 bg-light2`}
                   ></div>
                 </Link>
               ))}
