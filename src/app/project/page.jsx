@@ -35,7 +35,6 @@ export default function Project() {
     <>
       <div className=" overflow-hidden  ">
         <div className="relative  mb-5 lg:mb-10 ">
-          {" "}
           <TextAnimation text="Projects" />
           <ButtonCol col={col} setCol={setCol} />
         </div>
