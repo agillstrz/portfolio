@@ -12,7 +12,7 @@ export default function CardSkill({ skill }) {
           onClick={() => setSelectedId(skill.id)}
           className="w-full h-full"
         >
-          <div className="flex  w-full justify-center gap-x-3">
+          <div className="flex   w-full justify-center gap-x-3">
             <img className="h-24" src={skill.img} alt="" />
           </div>
           <h1 className="font-bold capitalize text-lg text-center">
