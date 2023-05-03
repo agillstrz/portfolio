@@ -1,6 +1,5 @@
 "use client";
 import { SKILLS } from "@/mockup/mockup";
-import React from "react";
 import { motion } from "framer-motion";
 export default function Skill() {
   return (

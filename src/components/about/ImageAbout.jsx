@@ -1,8 +1,4 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-import foto from "../../assets/img/foto.jpg";
-import Image from "next/image";
 export default function ImageAbout() {
   return (
     <>
