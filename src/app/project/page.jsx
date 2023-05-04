@@ -4,6 +4,7 @@ import ButtonCol from "@/components/button/ButtonCol";
 import CardProject from "@/components/card/CardProject";
 import { project } from "@/mockup/mockup";
 import { useState } from "react";
+import { motion } from "framer-motion";
 export default function Project() {
   const [col, setCol] = useState(1);
   const parrent = {
@@ -35,7 +36,13 @@ export default function Project() {
     <>
       <div className=" overflow-hidden  ">
         <div className="relative  mb-5 lg:mb-10 ">
-          <TextAnimation text="Projects" />
+          <TextAnimation
+            component={
+              <h1 className="lg:text-5xl text-3xl font-bold  text-center">
+                Project
+              </h1>
+            }
+          />
           <ButtonCol col={col} setCol={setCol} />
         </div>
         <div

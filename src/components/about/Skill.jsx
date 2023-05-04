@@ -7,7 +7,7 @@ export default function Skill() {
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.9, ease: "easeInOut" }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
         viewport={{ once: true }}
         className="col-span-3 order-3 w-full"
       >
