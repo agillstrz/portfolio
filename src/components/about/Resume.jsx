@@ -15,15 +15,15 @@ export default function Resume() {
           Resume
         </p>
         <p className="lg:text-[17px] font-medium">
-          "An Information Systems student with a passion for frontend
+          "I am an Information Systems student with a passion for frontend
           development. I have skills in HTML, CSS, JavaScript, React JS, and a
-          basic understanding of API development using Laravel. I have undergone
+          basic understanding of API development using Laravel. I underwent
           training to become a frontend developer at Altera Academy and
           collaborated with my fellow training team members to create a complex
-          website. I am active as a person in charge of the Information Systems
-          Laboratory, so that I can be professional in the work environment and
-          I am looking for a starting position to learn, broaden my skills, and
-          apply my knowledge."
+          website. I am also actively involved as the person in charge of the
+          Information Systems Laboratory, which has helped me to develop a
+          professional work ethic. I am currently seeking a starting position to
+          further learn, broaden my skills, and apply my knowledge"
         </p>
       </motion.div>
     </>
