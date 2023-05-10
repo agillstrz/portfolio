@@ -63,9 +63,16 @@ export default function Hero() {
                 >
                   Resume
                 </a>
-                <button className="btnDark px-4 py-2 lg:text-[18px] font-bold">
-                  Contact Me
-                </button>
+
+                <form
+                  action="mailto:agillstrz@gmail.com"
+                  method="post"
+                  enctype="text/plain"
+                >
+                  <button className="btnDark px-4 py-2 lg:text-[18px] font-bold">
+                    Contact Me
+                  </button>
+                </form>
                 <button
                   onClick={() => setSkill(true)}
                   className="btnDark px-4 py-2 lg:text-[18px] font-bold"
